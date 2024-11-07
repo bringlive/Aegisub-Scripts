@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4d278ae2-37e9-4de7-8656-4ef2edbe456a)**Original post by: https://github.com/unanimated**
+**Original post by: https://github.com/unanimated**
 
 
 Manuals for All Reanimated Scripts
@@ -1068,7 +1068,7 @@ I'll just add some things here that use images.
 
 FBF Retrack (Repositioning Field)     
 
-![image](https://github.com/user-attachments/assets/5af61f80-dff4-4c7f-a289-4849aef043f4)
+![image](https://github.com/user-attachments/assets/0b65dddf-526d-4ac1-9ff9-0511032cf588)
 
 
 As is explained in the Guide, this has two modes - simple, and smoothening.
@@ -1086,7 +1086,7 @@ It can range from 0 to 100%, so settings beyond those values get reset to 0 or 1
 
 In the second image, I used a fairly low value of '20'.
 
-![image](https://github.com/user-attachments/assets/adcd5786-cd43-439d-9687-7aa9710da940)
+![image](https://github.com/user-attachments/assets/88e952c8-9fd4-4f04-8393-3e6ea70e5e87)
 
 
 You can see the blue track didn't change much. Only the two lines on the bottom left edge aren't standing out that much anymore, which is pretty much the whole point. If your tracking in Mocha does something weird in one random frame, this may help, though it is yet to be seen how practical this actually is.
@@ -1101,7 +1101,8 @@ The yellow one is not really a realistic example of anything, but you can see wh
 
 I haven't tried it on many examples, so it will require some experiments to find out how useful this can be for different kinds of tracks.
 
-![image](https://github.com/user-attachments/assets/a5c06fba-5058-44ad-b9f0-d163eb962baf)
+![image](https://github.com/user-attachments/assets/34db774e-3b3c-46dc-a188-23e8e0d1d45d)
+
 
 The last image is with the strongest smooth setting - 100. The first half of the blue track is pretty smooth, but the second part, where you have bigger changes of direction, is probably already overdone, as the track is shifted towards the centre of the curve. You can apply this to only part of the track, though.
 
