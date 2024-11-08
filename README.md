@@ -1288,11 +1288,14 @@ The images highlight options and the button relevant to the functions described.
 
 Colourise by Letter / Word
 
+![image](https://github.com/user-attachments/assets/80e19fc4-82c2-4984-b726-45b0699a9c1b)
 
 
 This is the default function for the Colourise button. The green area is what settings it uses.
 
 What you do with this is pick a number of colours (2-7) and set them letter by letter to the whole line. (Spaces don't count.)
+
+![image](https://github.com/user-attachments/assets/cbeba1bc-f694-4149-bafe-2344135af024)
 
 Colours is where you set how many colours you want. The 7 colour pickers are where you select the colours.
 Apply to is where you select the colour type you want this applied to. Only one type can be thus used at a time,
@@ -1300,10 +1303,13 @@ but this has full support for inline tags and comments, so you can run it again 
 
 Colourise by word will switch colours after each word rather than character.
 
+![image](https://github.com/user-attachments/assets/c2d5b863-7d18-4304-a8c9-fc6dd8f29739)
+
 The definition of 'word' here is whatever is between two spaces. So basically it puts tags after each space (and at the beginning).
 
 Bounce back uses the colours you pick and then goes back from the last to the first, and so on, so instead of 123451234512345, you will have 12345432123454321...
 
+![image](https://github.com/user-attachments/assets/febe9b64-d8e4-43b3-8e04-7f4fab260042)
 
 The Shift function is closely related to this. It simply shifts all the colour tags to the right, and the last colour goes to the beginning. It works for the selected type (Apply to), and it doesn't matter how many tags of that type there are in the line. (Well, there must be at least two.) The value from each tag will simply be transferred to the next one.
 
@@ -1317,6 +1323,9 @@ Shift line by line is what really makes this interesting. You use it on fbf line
 
 There are 3 more options under Shift base: 1st2start, last2start, all2start.
 These are unrelated to the other shifting. The last of them is the same as "move colour tag to first block" in HYDRA, but it's applied only to the type in "Apply to", as are the other two.
+
+![image](https://github.com/user-attachments/assets/248783d8-1b0f-46fc-8de0-37a9548ab7c9)
+
 1st2start will only move the 1st inline colour tag of the selected type, and last2start will move the last one. This is probably not very useful for most people, but I actually somehow use it pretty often, so there it is.
 
 
@@ -1328,9 +1337,9 @@ For 2 colours, it'll be the first and last characters.
 The colours are set evenly (as much as possible) across the line.
 This can help with some irregular GBC.
 
+![image](https://github.com/user-attachments/assets/31c0bf59-51cf-4d6a-b5bf-88929f2000a0)
 
-
-
+![image](https://github.com/user-attachments/assets/6e02768b-d2ed-4d9b-846a-13ecd4224d3b)
 
 
 Gradient - Creates a gradient by character.
@@ -1354,16 +1363,14 @@ There are several differences from lyger's GBC:
 
 If both 'Set colours' and 'Gradient' are checked, Gradient will run.
 
-
-
+![image](https://github.com/user-attachments/assets/eaec576c-3c13-433e-916f-04aa56768a89)
 
 Here's the difference between the RGB and HSL gradients.
 
 From version 5, there are also two extra macros for hotkeying, one for each gradient type.
 These run with \c and \3c checked, and 'shorter hue' for HSL.
 
-
-
+![image](https://github.com/user-attachments/assets/e4d25da5-8757-4350-8065-0aa69b3edcfa)
 
 Tune colours - Loads all colours from a line into a GUI and lets you change them from there. For more info, check this.
 You can select all tags/regular/transf to load colours only from transforms, only those not from transforms, or all.
@@ -1376,6 +1383,7 @@ The Tune/Rvrs button runs this by default, unless 'Reverse colours' is checked, 
 
 Reverse Colours
 
+![image](https://github.com/user-attachments/assets/ace9e994-95e6-4d4a-913a-a00ebf41c770)
 
 
 This is a simple thing that reverses the order of colours for each selected type.
@@ -1387,7 +1395,9 @@ This means that a full gradient will get reversed completely.
 
 Match Colours
 
-This should apply to all colour tags of selected types in the line.
+This should apply to all colour tags of selected types in the line.              
+
+![image](https://github.com/user-attachments/assets/091abcbc-449f-4bb4-85db-f8282bbe3f13)
 
 c->3c: outline colour is changed to match primary
 3c->c: primary colour is changed to match outline
@@ -1406,6 +1416,8 @@ to prevent weird results due to selecting more (or forgetting to unselect some) 
 
 
 RGB / HSL
+
+![image](https://github.com/user-attachments/assets/3c86a420-c441-4a5a-8c76-ed1f2c49c783)
 
 Rather obviously, this adjusts Red/Green/Blue
 or Hue/Saturation/Lightness for all colour tags
@@ -1434,7 +1446,7 @@ only after the RGB ones had been.
 
 General Settings
 
-
+![image](https://github.com/user-attachments/assets/f1cca58e-1815-4707-99ed-fb0038df5664)
 
 Remember last - Remembers last settings. (Until reloading automation directory, or you can just uncheck it and cancel, and loading the GUI again will give you the saved/default values.)
 
@@ -1446,6 +1458,8 @@ Save config - Saves current settings as defaults.
 
 
 **Multi-line Editor**
+
+![image](https://github.com/user-attachments/assets/fa78bddf-d62f-4245-ad4b-c3944b17ca8c)
 
 
 Purpose: Edit multiple lines like on a pad
@@ -1478,13 +1492,15 @@ It has both standard regexp and lua pattern matching. (If you check both, lua ap
 
 A recent addition is the Switch button that switches to another mode.
 
+![image](https://github.com/user-attachments/assets/a2e79e72-4f23-437f-89f5-e6974a41dff7)
 
 
 In this mode, you can see Style, Actor, and Effect the same way as Text, and you can edit all of them the same way.
 Replacer can also be used on all of them. The checkboxes at the top determine what the Replacer will affect.
 You must always maintain the original line count for each of the 4, or you won't be able to save the results.
 
-Re-Split
+**Re-Split**
+
 Purpose: Move last word to the start of the next line or the other way round
 
 Supports: Handling of line breaks, start tags, and end comments
@@ -1509,7 +1525,8 @@ One key moves the last word to the next line, the other moves it back.
 This supports start tags and end comments, but not inline tags and possibly other weird stuff.
 Once a line break gets to one end, it gets nuked (and not transferred to the other line). You won't get it back by shifting the word back.
 
-Reverse
+**Reverse**
+
 Purpose: Reverse the order of text, effect, etc. in selected lines
 
 This is very simple. You just select which column you want to reverse, and value from last line will go to first line, etc.
@@ -1517,6 +1534,8 @@ If lines are numbered in Effect, reversing Effect will number them backwards. Wo
 
 
 **MultiCopy**
+
+![image](https://github.com/user-attachments/assets/8402a329-0057-42a5-8f2f-51025f636f11)
 
 
 Purpose: Copy specified things from selected lines / paste things to selected lines
@@ -1546,7 +1565,7 @@ Switch switches text in the selected columns. Copying strings to number fields d
 Attach attaches data from one column to another. For example if you have "01" in effect, and "Text" in text, and use the settings below, you will get "01 - Text" in text. (Effect remains unchanged.) Checking After would make it "Text - 01". If effect was empty, you'd be just attaching the text you type in "Link".
 Delete orig. deletes the content of the column you're copying from. So instead of copy from-to, it's move from-to.
 
-
+![image](https://github.com/user-attachments/assets/7e09f76f-8481-4a02-90ab-d4a062c196d6)
 
 
 Once you get your data, click on Copy to clipboard, select the lines you want to paste to, load the GUI again,
@@ -1584,17 +1603,21 @@ It still took maybe 10 minutes to fix the above-mentioned script, but it's the f
 Here I would like to point out that pasting over a very line-mismatched text is the most annoying part of fansubbing.
 So here's the monstrosity in its full glory:
 
+![image](https://github.com/user-attachments/assets/65b1864a-cc76-44b4-9e65-5a6c614ada7d)
 
 
 On the left is the text of the original script, loaded from Aegisub. On the right is the text being pasted over.
 You shouldn't touch the text on the left because the line count in Aegisub has to stay the same. Text changes will be ignored too.
 The left side is for reference so that you can fix the right side.
 
+![image](https://github.com/user-attachments/assets/ac50ddbf-6e11-43a0-8e2d-d2d7dcaf417f)
 
 
 Here you can see how the two sides don't match at all. (That's part of the script I had to deal with.)
 I already joined the jackass line, so out of these 8-10 (depending on the side) lines, only 3 are in the same place.
 What needs to be done is resplitting the lines on the right so that they match the lines on the left.
+
+![image](https://github.com/user-attachments/assets/bc9fd085-0517-4998-af08-dd79542b71e9)
 
 So how does this work?
 
@@ -1607,6 +1630,7 @@ You can change the number of sent lines for each turn. More is faster, but when 
 
 Add Left will add more lines to the text on the left, based on the number at the bottom left (10).
 
+![image](https://github.com/user-attachments/assets/cfbdcb03-c643-4347-874d-8d02b75b4821)
 
 Add Right does the equivalent for the right side, and obviously, Add Both does both at the same time.
 
@@ -1632,6 +1656,7 @@ any tag - This is for pasting tags, in the "\tag1\tag2" format. Doesn't matter w
 superpasta - This allows copying columns from one selection to another.
 Just copy several whole lines with ctrl+c, select new lines, paste the whole thing in the GUI, select superpasta, and you'll get this:
 
+![image](https://github.com/user-attachments/assets/b12540a0-a98b-49f2-b9ca-eb50779629bc)
 
 
 You can paste for example Effect from some lines to Effect in other lines, but also to another field in those other lines, like Actor.
@@ -1656,12 +1681,14 @@ A space is used as a separator, so you get original_text pasted_text
 
 If pasted data doesn't match line count of selection, you get choices for what you want to do.
 
+![image](https://github.com/user-attachments/assets/669db62c-a81e-468b-87fe-c80e330843d0)
 
 
 If you have more lines selected than you're pasting, you can either Loop paste or Paste only copied lines.
 In the case above, Loop will paste that one line into all 4 selected, while the other option only pastes that one saved line, and the remaining 3 stay the same.
 If you had 3 lines copied and 8 lines selected, Loop would paste lines 1 2 3 1 2 3 1 2 into the 8 selected.
 
+![image](https://github.com/user-attachments/assets/e6c3f9be-d66b-4070-adfb-2e99dc188c2d)
 
 
 If you have more lines copied than selected, you can Paste only what you have copied, or Paste all lines.
@@ -1679,6 +1706,10 @@ Repeat Last - Repeat last action with the same settings. You should press the sa
 
 
 **FadeWorkS**
+
+![image](https://github.com/user-attachments/assets/5bc3ec92-f52b-4433-bf06-44b58fbad892)
+
+
 Formerly known as Apply Fade
 (It was one of the few remaining superboring names, OK?)
 
@@ -1763,6 +1794,7 @@ Negative fade gives you the inverse with respect to duration, so if dur=3000 and
 FadeWorks
 This was created for various fbf fade effects that focus more on replicating lines than alpha fade. The idea was to add lines before start time and after end time and do things you can't do with transforms. The main part is shifting position, which includes acceleration, so you can create linear movement with accel or all kinds of other moves.
 
+![image](https://github.com/user-attachments/assets/f9e00666-6449-4fed-9f80-1d643bb3b114)
 
 
 Save/Load:
@@ -1787,6 +1819,9 @@ This mode disables Frames per line.
 You can add transforms to this, but just like the fades, these will reset on each line, and the effect is kind of bizarre and requires some experimentation to get something useful out of it.
 It does work combined with the fbf transforms, but the results may be a bit unpredictable and bad, and they will look different for fade in and fade out.
 
+![image](https://github.com/user-attachments/assets/c43a4fa0-09e1-4654-bbac-700b72986ce1)
+
+
 All of this is much better to show than explain, so I have made this file with some examples.
 Load it up and see what can be done with this. Then you'll have to experiment a bit to figure it out.
 Each of those examples is made from the one middle line.
@@ -1798,6 +1833,9 @@ You can Save, Load, and Delete presets.
 
 
 **Selectricks**
+
+![image](https://github.com/user-attachments/assets/d9a9a203-0f45-47f8-a2bf-425f28377b55)
+
 
 Purpose: Select or sort lines based on given criteria
 
@@ -1871,6 +1909,8 @@ Only 1st result should be compatible with everything.
 
 **ShiftCut**
 
+![image](https://github.com/user-attachments/assets/b68e8d49-80da-4835-9e44-73cd001ee70e)
+
 
 Purpose: Timing operations
 
@@ -1881,6 +1921,7 @@ This started with some things the TPP didn't do and ended up as a complete repla
 
 For clarity, let's divide this by colours again.
 
+![image](https://github.com/user-attachments/assets/7546b9c9-bd9d-42d9-bdc6-0e373955a26b)
 
 
 The top part is general settings.
@@ -1943,6 +1984,9 @@ These 4 macros are hotkey equivalents of Ctrl+mouse drag. They can be useful for
 
 **Time Signs**
 
+![image](https://github.com/user-attachments/assets/a6edbf93-f8ab-4d13-afd7-eca1755395c3)
+
+
 Purpose: Time signs from timecodes like this one: {TS 5:36}
 
 Features: shift times; snap to keyframes; fill in times for lines without timecodes;
@@ -1965,6 +2009,8 @@ You can have multiple timecodes for the same sign, like {TS 5:36, 5:47, 6:52}, a
 
 **Change Case**
 
+![image](https://github.com/user-attachments/assets/e2d51a17-f90b-4df0-90e7-4979bd30fcc1)
+
 
 Purpose: Change case of text
 
@@ -1979,6 +2025,8 @@ Lowercase: This will lowercase only words that are in uppercase. If you have wei
 
 
 **Significance**
+
+![image](https://github.com/user-attachments/assets/2b0aabcb-0dfe-40de-8620-69c3471febf2)
 
 
 Purpose: Do a shitload of things that the other scripts don't do
@@ -2000,17 +2048,22 @@ I might put some more descriptions for some functions here later, but for now, j
 
 Import/Export part
 
+![image](https://github.com/user-attachments/assets/b099097f-6102-40fb-a7f0-7eee76102872)
 
 The whole Import/Export section is just this small part on the left.
 
 import signs / export sign are the main functions.
 The purpose is to save signs/templates that you're going to use often, and then load them up when you need them, usually replacing the text with text of the new sign.
 
+![image](https://github.com/user-attachments/assets/8f373a61-89af-4bce-a83e-f020a18bbca3)
+
+
 An imported sign can have any number of lines. When imported, the lines can either be shifted to the start of the current line, or you can match the times of all lines to the current line. You can keep the original text or replace with the curent text, or replace only certain lines and keep text of the others. You can also combine tags of the original and the current lines, with either of them overriding the other if there are the same types of tags.
 
 
 Chapters part
 
+![image](https://github.com/user-attachments/assets/64e7d302-d77a-4159-aebf-874ba359d0e3)
 
 You can either create lines with chapters or export chapters as xml (or txt).
 
@@ -2025,18 +2078,19 @@ if you don't want the default "eng".
 
 Numbers part
 
-
-
+![image](https://github.com/user-attachments/assets/88f49fb8-fd96-4947-a354-a7d45782e3b3)
 
 Do Stuff part
 
-
+![image](https://github.com/user-attachments/assets/6b86b89c-3b88-49cc-9478-56abb2e4e684)
 
 This was the last part to be added to Significance, but it has since become the largest one by far.
 
 Some of the functions are simple and rarely useful, and they're there 'just in case somebody ever needs them'. Others are very powerful and create complex effects.
 
 They belong in the same category only because it's the "didn't fit anywhere else" category, so this whole section is pretty random.
+
+![image](https://github.com/user-attachments/assets/4cc99707-87a8-4c2e-95ea-0a92e2e9b36b)
 
 The only way to get an idea of what's there is to read the whole help for that section, and for some of the more complex ones there's help in their own GUI that you get to when you activate the function.
 
@@ -2046,6 +2100,8 @@ Some of the functions use the Left/Right fields or the Marker, so if you just tr
 
 
 **Activ8**
+
+![image](https://github.com/user-attachments/assets/dd79bc12-60e0-41d0-bcce-1e7e0c03004b)
 
 
 Purpose: Easily edit a complex active line
@@ -2065,6 +2121,8 @@ The part on the right is for inline tags, comments, and line breaks. The numbers
 
 The top mid part is not for editing but provides some information about the line and its style. The box with "fish" is style, and below it are actor, effect, margins, and then layer to the left. Tooltips will tell you what's what. All these can be edited.
 
+![image](https://github.com/user-attachments/assets/d17542de-905e-423a-adf3-35f4523227e0)
+
 In the start tags window, transforms are broken down by tags, to make things even more readable. As I've said, the line breaks don't matter.
 
 In the middle window, you can now see some extra information. There's \move in the tags, so it now shows you by how much the line is moving, in this case 1 pixel to the left and 9 pixels down.
@@ -2073,6 +2131,7 @@ There's also a transform with \fscx, which means the text changes size. The "sca
 
 These values can sometimes be useful information.
 
+![image](https://github.com/user-attachments/assets/b2cc5332-15c8-4f68-83e9-58a8db9b54c0)
 
 You may be wondering why there are two lines with text.
 The image on the right shows the difference. The second one includes line breaks.
@@ -2083,14 +2142,20 @@ It's treated more or less as a tag, so you can edit the line's clean text, and t
 
 If you make the text shorter, tags that would end up beyond the end of text will disappear.
 
+![image](https://github.com/user-attachments/assets/ab6e46f9-06b0-4f04-865e-30dcffacd216)
+
 You can also shift all inline tags with the tool at the bottom.
 This changes the numbers in the inline window and reloads the GUI with the result.
+
+![image](https://github.com/user-attachments/assets/bf68b90b-63d7-4d6c-b171-b36b63e90402)
 
 The Replacer is pretty straightforward.
 You can check whether to replace in start tags, inline tags, or text, and you can use regexp.
 
 The last part is some extra options for start tags and inline tags.
 You can round values of tags based on the Rounding menu in the middle of the GUI. For start tags, you can also sort them in a fixed order. (Same as in the sort function in HYDRA.)
+
+![image](https://github.com/user-attachments/assets/bca3dfde-1b2f-4171-85b1-a3fe490f56a2)
 
 The Valid8 button checks all tags in the active line, and if it finds some that don't seem to have the correct format, they will be listed in the middle top window. Assuming that you don't regularly produce fucked up tags, this will do nothing apparent most of the time.
 
@@ -2099,7 +2164,9 @@ I think the main strong points of this script are two:
 2. You can easily edit text with inline tags.
 
 
-ModiFire
+**ModiFire**
+
+![image](https://github.com/user-attachments/assets/3dd1e1f7-fbb1-4f5a-ab14-8bd8eebdaf5b)
 
 
 Purpose: Modify existing tags
@@ -2123,6 +2190,8 @@ Select a tag, type a value, and all tags of that type in the selected lines will
 - not in transforms / in transforms / both
 - start tags / inline tags / both
 
+![image](https://github.com/user-attachments/assets/323de23c-1919-4f69-be2c-2a2865261721)
+
 That list loaded in the GUI shows you exactly what tags will be affected.
 While Recalculator multiplies and adds values, this sets a fixed one.
 And while you can set fixed tags with HYDRA, this only modifies existing tags, doesn't create new ones, and uses the dropdown options for what tags to apply this to. It also has separate values for each half (fourth) of pos, org, fad, and move.
@@ -2143,18 +2212,18 @@ An edit box for the accel value will pop up, so don't look for it in the main GU
 Isolator will "isolate" a tag of your choice by putting it at the beginning of each tag block in which it is present.
 Aside from that, it also sorts tags like the function in HYDRA. You'll get a menu with tags to choose from. The menu is in the order the tags get sorted, so if you leave it as it is, tags just get sorted. If you pick, say, fsp, tags get sorted the same way except that fsp will be first and then the rest in the usual order. This can come in handy if you need to see a particular tag clearly in the subtitle grid.
 
-
+![image](https://github.com/user-attachments/assets/282ea2c7-915b-407d-8082-9075422b9e5d)
 
 Isolator with "blur" selected.
 
-
+![image](https://github.com/user-attachments/assets/4ce0f64c-907f-4ab1-96f4-3e0d0641c967)
 
 Isolator with "fax" selected.
 
 Korelator is a new addition that may seem complicated at first, but it's pretty powerful and can occasionally be quite handy.
 Currently it's accessed through the checkbox and any button except cancel. A new GUI pops up.
 
-
+![image](https://github.com/user-attachments/assets/18f93dea-4784-451d-83b9-4a75ec26f999)
 
 The idea is to adjust values of one tag, say border, based on another, say fscx. So select fscx on the left and bord on the right.
 Now you need to give two values for each. So we give 100 and 200 for fscx, and for example 2 and 4 for border.
@@ -2176,6 +2245,8 @@ Again, most of this stuff is not particularly useful for regular typesetting, bu
 
 
 **Masquerade**
+
+![image](https://github.com/user-attachments/assets/a87b5e54-72f9-4a87-b5e4-a60ac3e67295)
 
 
 Purpose: Multipurpose
@@ -2214,7 +2285,7 @@ an8 / q2 - Applies selected tags. q2 also gets removed when it's present.
 
 Motion Blur
 
-
+![image](https://github.com/user-attachments/assets/1c99d7cb-dd20-43ee-9a8b-6981ed9f565c)
 
 Creates motion blur by duplicating the line and using some Alpha.
 You can set a value for Blur or keep the existing blur for each line (Keep).
@@ -2230,7 +2301,7 @@ For active line, you can shift tags by character(s) or by word(s).
 For the first block, single tags can be moved right.
 For inline tags, each block can be moved left or right.
 
-
+![image](https://github.com/user-attachments/assets/3a41ed73-8710-4e02-af24-e869696ea97e)
 
 This mini GUI has start tags on the left and inline tags on the right. Check those you want to shift. Click on Shift Left or Shift Right.
 Check word if you want to shift by words instead of letters, and set how many letters/words to shift by.
@@ -2240,7 +2311,7 @@ You can create regular start tags quickly and use this to shift them to become i
 
 If a tag is marked by an "arrow" - > - a different GUI is loaded. (See HYDRA for Arrow Shifter.)
 
-
+![image](https://github.com/user-attachments/assets/033503f7-cc46-46eb-8b67-b999958903ce)
 
 Here we had >\i1 in start tags. That \i1 will be shifted to where you place >.
 You see it's being put before "on", so the result will be {\i1}on?. The tag is removed from the original location.
@@ -2264,6 +2335,9 @@ See Cycles script for the macro that adds/removes the {switch} comment.
 
 Alpha Shift
 Makes text appear letter by letter on frame-by-frame lines using alpha&HFF& like this:
+
+![image](https://github.com/user-attachments/assets/8d718ef1-3b19-4fda-bec7-7b6d7826ae65)
+
 {alpha&HFF&}text
 t{alpha&HFF&}ext
 te{alpha&HFF&}xt
@@ -2277,7 +2351,7 @@ If you switch from α to 1a in the GUI, \alpha tags will be changed to \1a tags.
 Alpha Time
 Either select lines that are already timed for alpha timing and need alpha tags, or just one line that needs to be alpha timed.
 
-
+![image](https://github.com/user-attachments/assets/32d67826-2128-4302-a802-d7f4d5c5d550)
 
 In the GUI, split the line by hitting Enter where you want the alpha tags.
 If you make no line breaks, text will be split by spaces.
@@ -2302,6 +2376,8 @@ Replaces strikeout or underline tags with \alpha&H00& or \alpha&HFF&. Also @.
 If no replacement is made, it will reorder alpha tags in each block so that all 1a-4a go after alpha.
 
 It can also use the Bell Shifter and Wave Shifter to do a few things.
+
+![image](https://github.com/user-attachments/assets/753b0b60-6a0e-4743-9866-e0bd4076549a)
 
 If there's {~} in the line, this 'menu' will pop up.
 If you type 80 in the first edit box and hit fscx+fscy,
@@ -2328,6 +2404,8 @@ If you place the Bell somewhere, Strikealpha will comment out the word after it.
 
 
 SvartAlfa
+
+![image](https://github.com/user-attachments/assets/c34c2409-5842-45f2-b46d-c1886f9a745b)
 
 This Strikealfa alternative is called SvartAlfa because it was written by dark elves. (You didn't think I write all this shit by myself, did you?) They're good at blending in and disappearing, so it makes sense that they would know how to use alpha tags.
 
@@ -2363,6 +2441,8 @@ Strike and Underline tags get removed, but ~ and • stay, in this case. (They'r
 
 Deltastrike
 
+![image](https://github.com/user-attachments/assets/96835d42-4fe1-4d8f-80d8-b42a77b3a784)
+
 This gives you yet more options, and this time you can define them yourself.
 You get to this image on the left when saving config.
 Here the \s and \u tags must be separate from other tags.
@@ -2370,16 +2450,10 @@ You can type whatever you want in those 6 fields.
 
 
 
+**Converter**
 
+![image](https://github.com/user-attachments/assets/e226c152-51bc-4b28-8ca6-9692d71ec816)
 
-
-
-
-
-
-
-
-Converter
 This is a separate macro in Masquerade that goes even further than Deltastrike.
 
 You can define a whole list of conversions/replacements to be made upon pressing a hotkey.
@@ -2396,7 +2470,9 @@ you will be asked if you want to replace that thing.
 
 If there is a list of several options, you can select ones you want and press Selected, or if you accept all, you can press All and don't need bother selecting, or choose None if you want none of these at the moment, and only the always ones will be done.
 
+![image](https://github.com/user-attachments/assets/0ace86fa-d956-421a-85a2-c28766242ab6)
 
+![image](https://github.com/user-attachments/assets/beb3cc39-5e0a-4026-b082-6411eda8d9c9)
 
 If you press Edit List in the first image, you get to see the whole list, and you can change, add, or remove anything.
 
@@ -2420,6 +2496,7 @@ To have some feedback, I have made it that when the selection is over 20 lines, 
 
 **NecrosCopy**
 
+![image](https://github.com/user-attachments/assets/61cb9f30-5d61-41ea-870c-7ccb742aacfd)
 
 Purpose: Multipurpose
 
@@ -2467,6 +2544,8 @@ bottom up reverses the direction of copying, and things are copied from the last
 
 
 Necroscopy
+
+![image](https://github.com/user-attachments/assets/84c1e20a-3a58-4366-b453-d880fe245e84)
 
 This lets you copy almost anything from one line to others.
 The primary use is to copy from the first line of your selection to the others.
@@ -2522,8 +2601,7 @@ Unlike Necroscopy, this can read the colours/alphas from the style when tags are
 
 Creates a 3D-effect out of a shadow by making multiple layers with different shadow size, using xshad and yshad.
 
-
-
+![image](https://github.com/user-attachments/assets/40927be4-6359-45ff-ad85-27b4a208e6dc)
 
 Split by \N
 
@@ -2532,7 +2610,7 @@ If there's no line break, you can split by tags, spaces, or a marker.
 If you want to split by tags or spaces when you have line breaks, check the split GUI option.
 If you split by anything other than line breaks, then those get nuked.
 
-
+![image](https://github.com/user-attachments/assets/a794fbf9-3e80-43fb-9ecd-054436ad131d)
 
 Splitting will try to keep the position of each part. I decided not to add a \pos tag when there isn't one.
 It should support \fs, \fscx, \fscy, \fsp, \fn, \frz (but not inline), \move, and \an. (The positioning will be off in those cases.)
@@ -2548,7 +2626,7 @@ The clip must have one more point than there are words in the line, otherwise it
 This is explained in more detail with images in the Alignment section of the TS Guide.
 Just a short illustration here:
 
- --> 
+ -->  ![image](https://github.com/user-attachments/assets/c3207738-8865-40eb-baf0-dc9eca27c55d)      ![image](https://github.com/user-attachments/assets/f9da29a0-0491-4614-a9be-15a6cb213612)
 
 This works with "Tags" as well. You can have however many inline tags you want, but the clip must have one more point than that,
 and each clip segment is the part between two tags, so it's up to you to figure out how that's gonna work.
@@ -2566,7 +2644,7 @@ Now when the GUI opens, you type {} into the Marker field and click on Marker.
 "Word1 word2 word3 word4" will be aligned to the first clip line, "word5" to the second.
 This gives you the tools to align the line pretty much any way you want.
 
- --> 
+ --> ![image](https://github.com/user-attachments/assets/6a56f521-6e08-47a6-b903-57d0194303df)      ![image](https://github.com/user-attachments/assets/db5fc222-b6fe-4189-b05e-a02867507d01)
 
 The line is: split by not a clip but {}marker
 
@@ -2588,6 +2666,8 @@ You can split by commas, for example, but they'll be gone from the resulting lin
 
 Split Text into Letters
 
+![image](https://github.com/user-attachments/assets/6f7a1408-f435-4b53-9978-f484dcf99839)
+
 This is the same as "Space Out Letters" in Relocator. It makes a new line for each letter of the text.
 You can set a distance, and the line will be split into letters with that distance between them.
 Value "1" is the normal distance, otherwise the value is pixels. You can randomly expect about 1% inaccuracy.
@@ -2601,6 +2681,7 @@ Inline tags should work unless they have impact on the size/position.
 
 **Encode - Hardsub**
 
+![image](https://github.com/user-attachments/assets/51708fd9-f048-402f-b8a1-45e1631dec58)
 
 Purpose: Encode a clip or the whole video with or without hardsubs, using x264 encoder
 
@@ -2647,6 +2728,7 @@ You can encode clips for mocha with this if torque's Motion script fails to enco
 
 **Multiplexer**
 
+![image](https://github.com/user-attachments/assets/b1e52ff6-927b-458b-b899-f317c8887a10)
 
 Purpose: Mux video with subtitles, suitable for muxig fansub releases
 
@@ -2668,8 +2750,7 @@ It's probably buggy, and I probably won't fix anything much about it.
 
 Backup Checker
 
-![image](https://github.com/user-attachments/assets/ba7e9272-38d3-4338-8e77-d87c3838f747)
-
+![image](https://github.com/user-attachments/assets/2ece9d02-2388-4d0c-91d7-8c596bd7c6ea)
 
 
 Purpose: Save a backup of your script so that you can later check the original lines after you've edited them
