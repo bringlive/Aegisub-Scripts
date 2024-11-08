@@ -2748,7 +2748,7 @@ If you type hiragana/katakana/romaji words in the corresponding fields and click
 It's probably buggy, and I probably won't fix anything much about it.
 
 
-Backup Checker
+**Backup Checker**
 
 ![image](https://github.com/user-attachments/assets/2ece9d02-2388-4d0c-91d7-8c596bd7c6ea)
 
@@ -2765,17 +2765,4 @@ File to Memory - Loads the content of a file to memory.
 No Comments - Removes {comments}.
 You can easily switch between different backups.
 If you split/join lines, the backup will be off by those, but you can just select more lines to load the ones you need to see.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
